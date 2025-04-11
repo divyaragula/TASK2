@@ -1,0 +1,55 @@
+/* === index.html === */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form & To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>ApexPlanet Internship</h1>
+      <ul>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#todo">To-Do</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="grid-container">
+    <!-- Contact Form -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+        <p class="error" id="formError"></p>
+      </form>
+    </section>
+
+    <!-- To-Do List -->
+    <section id="todo">
+      <h2>To-Do List</h2>
+      <input type="text" id="todoInput" placeholder="Add a task...">
+      <button id="addBtn">Add</button>
+      <ul id="todoList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
